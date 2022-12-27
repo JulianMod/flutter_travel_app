@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_travel_app/misc/colors.dart';
 import 'package:flutter_travel_app/widgets/app_large_text.dart';
 import 'package:flutter_travel_app/widgets/app_text.dart';
 
@@ -48,6 +49,18 @@ class _WelcomePageState extends State<WelcomePage> {
                       AppText(
                         text: "Mountains",
                         size: 30,
+                      ),
+                      SizedBox(
+                        height: 20,
+                      ),
+                      Container(
+                        width: 250,
+                        child: AppText(
+                          text: 'Mountain hikes give you an incredible sense'
+                              ' of freedom along with endurance test',
+                          color: AppColors.textColor2,
+                          size: 14,
+                        ),
                       )
                     ],
                   )
