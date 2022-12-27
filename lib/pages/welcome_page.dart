@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_travel_app/widgets/app_large_text.dart';
+import 'package:flutter_travel_app/widgets/app_text.dart';
 
 class WelcomePage extends StatefulWidget {
   const WelcomePage({Key? key}) : super(key: key);
@@ -41,8 +42,13 @@ class _WelcomePageState extends State<WelcomePage> {
               child: Row(
                 children: [
                   Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      AppLargeText(text: 'Trips')
+                      AppLargeText(text: 'Trips'),
+                      AppText(
+                        text: "Mountains",
+                        size: 30,
+                      )
                     ],
                   )
                 ],
